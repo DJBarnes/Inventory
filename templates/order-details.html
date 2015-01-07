@@ -1,0 +1,44 @@
+<table class='detailsTable'>
+  <tr>
+    <td class='orderDetails'><label>Vendor:</label></td>
+    <td class='orderDetails'>
+    <input id='vendor' name='vendor' type='text' value='<%= vendorName %>' maxlength='15' disabled="true" />
+    </td>
+  </tr>
+  <tr>
+    <td class='orderDetails'><label>Date:</label></td>
+    <td class='orderDetails'>
+    <input id='orderDate' name='orderDate' type='text' value='<%= orderDate %>' maxlength='15' disabled="true" />
+    </td>
+  </tr>
+  <tr>
+    <td class='orderDetails'><label>Open:</label></td>
+    <td class='orderDetails'>
+    <input id='status' name='status' type='text' value='<%= openStatus %>' maxlength='6'/>
+    </td>
+  </tr>
+  <tr>
+    <td class='orderDetails'>
+      <label>Items:</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class='orderDetails'>
+      <div id='items'>
+    
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class='orderDetails'>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+    <td class='orderDetails'>
+    <button id="close" class='close'>
+      Close Order
+    </button></td>
+    <td>
+  </tr>
+</table>

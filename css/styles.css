@@ -1,0 +1,384 @@
+/*Covers the entire document*/
+* {
+  font-family: "Verdana";
+  font-size: 18px;
+}
+
+/*Body section of CSS*/
+body {
+  background-color: #333333;
+  color: #DDDDDD;
+  text-shadow: -3px 0 4px #222222;
+}
+
+/*Div CSS for position*/
+div {
+  background-color: #333333;
+}
+
+div.header1 {
+  position: inherit;
+  width: 15%;
+  left: 10px;
+  top: 10px;
+  height: 60px;
+}
+
+div.header2 {
+  position: absolute;
+  width: 74%;
+  left: 16%;
+  top: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+div.header3 {
+  position: absolute;
+  width: 9%;
+  left: 90%;
+  top: 10px;
+  height: 60px;
+  text-align: right;
+}
+
+div.details {
+  position: absolute;
+  left: 10px;
+  top: 72px;
+  bottom: 20px;
+  width: 33%;
+  border: solid 1px #000000;
+}
+
+div.content {
+  position: absolute;
+  top: 72px;
+  bottom: 20px;
+  left: 34%;
+  border: solid 1px #000000;
+  width: 65%;
+}
+
+div.contentHeader {
+  width: 100%;
+  height: 100px;
+  position: inherit;
+}
+
+div.contentBody {
+  overflow-y: auto;
+  top: 68px;
+  bottom: 44px;
+  width: 100%;
+  position: inherit;
+}
+
+div.contentFooter {
+  text-align: right;
+  bottom: 0px;
+  width: 100%;
+  position: inherit;
+}
+
+div.details button {
+  width: 100px;
+  height: 60px;
+}
+
+div.optionsMenu {
+  position: absolute;
+  border: solid 2px white;
+}
+
+div.errorStatus {
+  color: red;
+}
+
+/*Span being used for header*/
+span.header {
+  font-size: 40px;
+  font-weight: bold;
+  display: inherit;
+}
+
+span.sectionSpan {
+  font-size: 22px;
+}
+
+/*Input and Textarea CSS*/
+input, textarea {
+  border: 1px solid #000000;
+  min-height: 30px;
+  width: 100%;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#777777), color-stop(100%,#AAAAAA)); /* Chrome,Safari4+ */
+}
+
+input.adjustment {
+  width: 40px;
+}
+
+textarea {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  height: 100px;
+}
+
+/*Select drop down CSS*/
+select {
+  background-color: #888888;
+  width: 100%;
+}
+
+/*Button CSS*/
+button {
+  padding: 6px;
+  height: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#777777), color-stop(100%,#AAAAAA)); /* Chrome,Safari4+ */
+  border-radius: 5px;
+}
+
+td button {
+  padding: 6px;
+  height: 38px;
+}
+
+button.login {
+  padding: 6px;
+  height: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#777777), color-stop(100%,#AAAAAA)); /* Chrome,Safari4+ */
+  border-radius: 5px;
+}
+
+button.addQty, button.removeQty {
+  padding: 6px;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  background-color: #888888;
+  font-weight: bolder;
+  text-shadow: 0px 0 2px #000000;
+  text-align: center;
+  vertical-align: center;
+}
+
+/*Table CSS */
+table.itemTable {
+  font: 80% Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #666666;
+  width: 100%;
+  cursor: hand;
+}
+
+table.logTable {
+  font: 80% Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #666666;
+  cursor: hand;
+}
+
+table.userTable {
+  font: 80% Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #666666;
+  cursor: hand;
+}
+
+table.orderTable {
+  font: 80% Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #666666;
+  cursor: hand;
+}
+
+table.tableHeader {
+  position: absolute;
+  top: 43px;
+}
+
+table.orderItems {
+  width: 100%;
+}
+
+tr.even {
+  background-color: #555555;
+}
+
+table.itemTable tr:hover {
+  background-color: #888888;
+}
+
+table.userTable tr:hover {
+  background-color: #888888;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+tr, th, td {
+  padding: .25em;
+  color: #DDDDDD;
+}
+
+tr.header {
+  text-align: left;
+  height: 50px;
+}
+
+tr.sectionHeader {
+  background-color: #995F12;
+  text-align: center;
+}
+
+tr.contentHeader {
+
+}
+
+/*CSS for the item table*/
+td.name {
+  width: 31%;
+  cursor: hand;
+}
+td.quantity {
+  text-align: right;
+  width: 13%;
+  cursor: hand;
+}
+td.adjustment {
+  width: 25%
+}
+td.vendor {
+  width: 31%
+}
+/*CSS for the log table*/
+td.action {
+  width: 31%;
+  cursor: hand;
+}
+td.userName {
+  width: 13%;
+  cursor: hand;
+}
+td.itemName {
+  width: 25%
+}
+td.logDate {
+  width: 31%
+}
+
+div.contentHeader td.action {
+  width: 31%;
+}
+div.contentHeader td.userName {
+  width: 13%;
+}
+div.contentHeader td.itemName {
+  width: 24%;
+}
+div.contentHeader td.logDate {
+  width:34%
+}
+
+/*CSS for the Order List*/
+td.date {
+  width: 31%;
+}
+td.items {
+  text-align: right;
+  width: 25%;
+}
+td.status {
+  width: 13%
+}
+
+div.contentHeader td.date {
+  width: 29%;
+}
+div.contentHeader td.vendor {
+  width: 31%;
+}
+div.contentHeader td.items {
+  text-align:right;
+  width: 21%;
+}
+div.contentHeader td.status {
+  width:14%
+}
+
+/*The Order Details tds*/
+table.detailsTable {
+  width:100%;
+}
+table.detailsTable td.orderDetails {
+  width:50%;
+}
+
+
+table.orderItems td {
+  font-size: 14px;
+}
+
+td.rightJustify {
+  text-align: right;
+}
+
+/*CSS for options Table*/
+table.optionsTable tr:hover {
+  background-color: #888888;
+}
+
+table.optionsTable tr {
+  text-align: right;
+  width: 13%;
+  cursor: hand;
+}
+
+/*Image CSS */
+img.mainImage {
+  cursor: hand;
+  width: 100%;
+  max-width: 170px;
+}
+
+img.manage {
+  cursor: hand;
+  width: 60px;
+  height: 60px;
+}
+
+img.startImg {
+  width: 100%;
+}
+
+img.Img404 {
+  height: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Anchor Tag CSS*/
+a {
+  color: orange;
+  cursor: hand;
+}
+
+.hidden {
+  display: none;
+}
+

@@ -1,0 +1,50 @@
+<table class='detailsTable'>
+  <tr>
+    <td><label>Name:</label></td>
+    <td>
+    <input id='name' name='name' type='text' value='<%= name %>' maxlength='15' />
+    </td>
+  </tr>
+  <tr>
+    <td><label>Quantity:</label></td>
+    <td>
+    <input id='quantity' name='quantity' type='text' value='<%= quantity %>' maxlength='3' />
+    </td>
+  </tr>
+  <tr>
+    <td><label>Category:</label></td>
+    <td id='category'></td>
+  </tr>
+  <tr>
+    <td><label>Vendor:</label></td>
+    <td id='vendor'></td>
+  </tr>
+  <tr>
+    <td><label>Email Threshold:</label></td>
+    <td>
+    <input id='emailThreshold' name='emailThreshold' type='text' value='<%= emailThreshold %>' maxlength='3'/>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Item Url:</label></td>
+  </tr>
+  <tr>
+    <td colspan='2'><textarea id='itemUrl' maxlength='150' name='itemUrl'><%= itemUrl %></textarea></td>
+  </tr>
+  <tr>
+    <td><label>Description:</label></td>
+  </tr>
+  <tr>
+    <td colspan="2"><textarea id='description' maxlength='55' name='description'><%= description %></textarea></td>
+  </tr>
+  <tr>
+    <td>
+    <button id="save" class='save'>
+      Save
+    </button></td>
+    <td>
+    <button id="delete" class='delete'>
+      Delete
+    </button></td>
+  </tr>
+</table>
