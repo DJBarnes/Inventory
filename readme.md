@@ -5,6 +5,12 @@ It should be known that this project is one of the very first web applications I
 
 A demo of this application can be seen at the following [Link](http://barnesbrothers.homeserver.com/inventory). The application is wired up to an actual database, and although I don't mind you playing around to see how the application functions, please don't be a troll. Otherwise I will be forced to remove the database component and alter the behavior of the application to something different than what the code reflects.
 
+To login, use the following credentials:
+
+UN: admin
+
+PW: password
+
 ## Technologies
 ### Slim PHP
 Slim PHP is the framework used to do the server side communication to the database. There is a router that listens for routes, and maps them to functions. The functions then do the database operations and returns JSON that the client side uses to update the application.
